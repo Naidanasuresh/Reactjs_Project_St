@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  
+  padding: 0px;
+  
+}
+.Profilecards{
+  margin: 20px;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 0px 40px 0px 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+
