@@ -4,7 +4,7 @@ function Primary_Button(props){
     // console.log(props)
     return (
         <>
-        <button onClick={props.onClick}>{props.children}</button>
+        <button type={props?.type==="submit"?"submit":"button"} className="bg-linear-to-br from[#ce212f] to-red-400" onClick={props.onClick}>{props.children}</button>
         
         </>
     )

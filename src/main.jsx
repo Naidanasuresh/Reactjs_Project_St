@@ -5,6 +5,8 @@ import {App} from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './Pages/HomePage.jsx'
 import Profile from './Pages/profile.jsx'
+import RegisterationPage from './Pages/RegisterationPage.jsx'
+import LoginPage from './Pages/LoginPage.jsx'
 
 
 // Visual mental model
@@ -19,20 +21,25 @@ import Profile from './Pages/profile.jsx'
 // <Outlet />
 
 const router=createBrowserRouter([
-       {
-  path: '/',              // Root URL → http://localhost:5173/
-  Component: App,         // Layout component that always renders
-  children: [
-    {
-      index: true,        // Default child route for "/"
-      Component: HomePage // Renders when path is exactly "/"
+
+   {
+        path: "/",
+        element: <App />
     },
     {
-      path: 'profile',   // Child URL → /profile
-      Component: Profile // Renders when path is "/profile"
+        path: "/profile",
+        element: <Profile />
+    },
+    {
+      path:'/register',
+      element:<RegisterationPage/>
+
+    },
+    {
+      path:'/login',
+      element:<LoginPage/>
     }
-  ]
-}
+
     ])
 
 createRoot(document.getElementById('root')).render(

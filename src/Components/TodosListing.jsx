@@ -19,3 +19,27 @@ const TodosListing = () => {
 }
 
 export default TodosListing
+
+
+
+// import useTodosStore from "../Stores/useStoreTodos"
+
+// const TodoEditor=()=>{
+
+//   const todos=useTodosStore((State)=>State.todos)
+
+//   return (
+//     <>
+
+//     {
+//       todos.map((todo,index)=>{
+//         <h1 key={index}>{todo}</h1>
+
+//       })
+//     }
+//     </>
+//   )
+
+// }
+
+// export default TodoEditor

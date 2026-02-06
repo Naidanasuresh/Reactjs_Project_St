@@ -1,9 +1,14 @@
-import React from 'react'
+
+import useUserStore from '../Stores/useUserStore'
 
 const Profile = () => {
+
+  const currentUser=useUserStore((state)=>state.user)
   return (
     <div>
-      <h1>profile</h1>
+      {
+        currentUser.name
+      }
     </div>
   )
 }
